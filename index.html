@@ -1,1 +1,118 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мій сайт</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#111;
+      color:white;
+      scroll-behavior: smooth;
+    }
+
+    header{
+      height:100vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1400');
+      background-size:cover;
+      background-position:center;
+    }
+
+    header h1{
+      font-size:60px;
+      margin-bottom:20px;
+    }
+
+    header p{
+      font-size:22px;
+      margin-bottom:30px;
+    }
+
+    .btn{
+      padding:15px 35px;
+      background:#00bfff;
+      color:white;
+      text-decoration:none;
+      border-radius:10px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#009acd;
+    }
+
+    section{
+      padding:80px 10%;
+    }
+
+    .cards{
+      display:flex;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .card{
+      flex:1;
+      min-width:250px;
+      background:#1e1e1e;
+      padding:25px;
+      border-radius:15px;
+    }
+
+    footer{
+      text-align:center;
+      padding:30px;
+      background:#000;
+      color:#777;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Односторінковий сайт</h1>
+  <p>Стильний landing page</p>
+  <a href="#about" class="btn">Детальніше</a>
+</header>
+
+<section id="about">
+  <h2>Про нас</h2>
+  <br>
+  <div class="cards">
+    <div class="card">
+      <h3>Швидко</h3>
+      <p>Сайт працює швидко на всіх пристроях.</p>
+    </div>
+
+    <div class="card">
+      <h3>Стильно</h3>
+      <p>Сучасний дизайн та анімації.</p>
+    </div>
+
+    <div class="card">
+      <h3>Просто</h3>
+      <p>Легко редагувати під себе.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Мій сайт
+</footer>
+
+</body>
+</html>
 
